@@ -1,10 +1,10 @@
 require 'benchmark'
 require_relative 'lib/rolling'
 
-puts Rolling.new(3, 2).run        # 0
-puts Rolling.new(10, 16).run      # 0.0082
-puts Rolling.new(100, 200).run    # 1.1856319413140785e-18
-puts Rolling.new(300, 500).run    # 3.0380067285316406e-88
+puts Rolling.new(3, 2).run        # 0 %
+puts Rolling.new(10, 16).run      # 0.0082 %
+puts Rolling.new(100, 200).run    # 1.1856319413140785e-18 %
+puts Rolling.new(300, 500).run    # 3.0380067285316406e-88 %
 
 Benchmark.bm(6) do |x|
   puts 'Dice | num'
